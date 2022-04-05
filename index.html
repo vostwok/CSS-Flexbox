@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HZC | HOME</title>
   <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/estilo.css">
+  <link rel="stylesheet" href="assets/css/estilos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
@@ -15,21 +15,23 @@
   <header class="cabecalho">
     <button class="cabecalho__menu" aria-label="Menu" ><i></i></button>
     <img src="assets/img/logo.svg" alt="logotipo da HZC" class="cabecalho__logo">
+    <p class="cabecalho__perfil">Bruno Lopez</p>
     <button class="cabecalho__notificacao"aria-label="notificação" ><i></i></button>
   </header>
-  <nav class="menu-lateral menu-lateral--ativo">
+  <nav class="menu-lateral">
     <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="menu-lateral__logo">
     <a href="#" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Início</a>
     <a href="#" class="menu-lateral__link menu-lateral__link--videos">Vídeos</a>
     <a href="#" class="menu-lateral__link menu-lateral__link--picos">Pícos</a>
-    <a href="#" class="menu-lateral__link menu-lateral__link--integrante">Integrante</a>
+    <a href="#" class="menu-lateral__link menu-lateral__link--integrantes">Integrante</a>
     <a href="#" class="menu-lateral__link menu-lateral__link--camisas">Camisas</a>
     <a href="#" class="menu-lateral__link menu-lateral__link--pinturas">Pinturas</a>
   </nav>
   <main class="principal">
     <h2 class="titulo-pagina">inicio</h2>
-    <article class="cartao cartao--destaque">
-      <img src="assets/img/banner-mobile_1.png" alt="banner do cartao" class="cartao__imagem">
+    <article class="cartao cartao--destaque destaque-video">
+      <img src="assets/img/banner-mobile_1.png" alt="banner do cartao" class="cartao__imagem cartao__imagem--mobile">
+      <img src="assets/img/banner_1.png" alt="banner do cartao" class="cartao__imagem cartao__imagem--desktop">
       <div class="cartao__conteudo">
         <p class="cartao__destaque">Video em destaque</p>
         <h3 class="cartao__titulo">HCZ - Título</h3>
@@ -39,7 +41,38 @@
         <botton class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</botton>
       </div>
     </article>
-    <section class="secao">
+    <article class="cartao cartao--recentes videos-recentes">
+      <h3 class="cartao__titulo">Vídeos recentes</h3>
+      <a href="#" class="cartao__link">Ver todos</a>
+      <ul class="cartao__lista">
+        <li class="cartao__item">
+          <img src="assets/img/miniatura_1.png" alt="thumbnail" class="cartao__item-thumbnail">
+          <h4 class="cartao__item-titulo">HZC - Love machine</h4>
+          <p class="cartao__item-perfil">Bruno Lopes</p>
+        </li>
+        <li class="cartao__item">
+          <img src="assets/img/miniatura_2.png" alt="thumbnail" class="cartao__item-thumbnail">
+          <h4 class="cartao__item-titulo"></h4>
+          <p class="cartao__item-perfil"></p>
+        </li>
+        <li class="cartao__item">
+          <img src="assets/img/miniatura_3.png" alt="thumbnail" class="cartao__item-thumbnail">
+          <h4 class="cartao__item-titulo"></h4>
+          <p class="cartao__item-perfil"></p>
+        </li>
+        <li class="cartao__item">
+          <img src="assets/img/miniatura_4.png" alt="thumbnail" class="cartao__item-thumbnail">
+          <h4 class="cartao__item-titulo"></h4>
+          <p class="cartao__item-perfil"></p>
+        </li>
+        <li class="cartao__item">
+          <img src="assets/img/miniatura_5.png" alt="thumbnail" class="cartao__item-thumbnail">
+          <h4 class="cartao__item-titulo"></h4>
+          <p class="cartao__item-perfil"></p>
+        </li>
+      </ul>
+    </article>
+    <section class="secao secao-videos">
       <h3 class="titulo-secao">Vídeos mais vistos</h3>
       <article class="cartao">
         <img src="assets/img/video_1.png" alt="video" class="cartao__imagem">
@@ -78,8 +111,40 @@
         </div>
       </article>
     </section>
-    <article class="cartao cartao--destaque">
-      <img src="assets/img/banner-mobile_1.png" alt="banner do cartao" class="cartao__imagem">
+    <article class="cartao cartao--recentes produtos-recentes">
+      <h3 class="cartao__titulo">Vídeos recentes</h3>
+      <a href="#" class="cartao__link">Ver todos</a>
+      <ul class="cartao__lista">
+        <li class="cartao__item">
+          <img src="assets/img/miniatura_1.png" alt="thumbnail" class="cartao__item-thumbnail">
+          <h4 class="cartao__item-titulo">HZC - Love machine</h4>
+          <p class="cartao__item-perfil">Bruno Lopes</p>
+        </li>
+        <li class="cartao__item">
+          <img src="assets/img/miniatura_2.png" alt="thumbnail" class="cartao__item-thumbnail">
+          <h4 class="cartao__item-titulo"></h4>
+          <p class="cartao__item-perfil"></p>
+        </li>
+        <li class="cartao__item">
+          <img src="assets/img/miniatura_3.png" alt="thumbnail" class="cartao__item-thumbnail">
+          <h4 class="cartao__item-titulo"></h4>
+          <p class="cartao__item-perfil"></p>
+        </li>
+        <li class="cartao__item">
+          <img src="assets/img/miniatura_4.png" alt="thumbnail" class="cartao__item-thumbnail">
+          <h4 class="cartao__item-titulo"></h4>
+          <p class="cartao__item-perfil"></p>
+        </li>
+        <li class="cartao__item">
+          <img src="assets/img/miniatura_5.png" alt="thumbnail" class="cartao__item-thumbnail">
+          <h4 class="cartao__item-titulo"></h4>
+          <p class="cartao__item-perfil"></p>
+        </li>
+      </ul>
+    </article>
+    <article class="cartao cartao--destaque destaque-produtos">
+      <img src="assets/img/banner-mobile_2.png" alt="banner do cartao" class="cartao__imagem cartao__imagem--mobile">
+      <img src="assets/img/banner_2.png" alt="banner do cartao" class="cartao__imagem cartao__imagem--desktop">
       <div class="cartao__conteudo">
         <p class="cartao__destaque">Video em destaque</p>
         <h3 class="cartao__titulo">HCZ - Título</h3>
@@ -89,7 +154,7 @@
         <botton class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</botton>
       </div>
     </article>
-    <section class="secao">
+    <section class="secao secao-produtos">
       <h3 class="titulo-secao">Vídeos mais vistos</h3>
       <article class="cartao">
         <img src="assets/img/video_1.png" alt="video" class="cartao__imagem">
